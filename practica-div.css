@@ -1,0 +1,23 @@
+#divPadre {
+    height:300px;
+    width:800px;
+    background-color:lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#divHijo {
+    text-align: center;
+    height:50px;
+    width:400px;
+    background-color:red;
+
+}
+
+#divHijo2 {
+    text-align: center;
+    height:50px;
+    width:50px;
+    background-color:rgb(9, 255, 0);
+    justify-content: center;
+}

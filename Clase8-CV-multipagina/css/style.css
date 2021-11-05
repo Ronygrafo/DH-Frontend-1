@@ -1,12 +1,18 @@
-.profile-image {
+#profile-image {
     margin: auto;
     display: block;
-    width: 150px;
+    width: 180px;
+    position: relative;
+    top: -5em;
+    z-index: 0;
 }
 
-.BannerImg {
-    background-image: url('');
+#BannerImg {
+    background-image: url('../img/Fondo-Banner.jpg');
     background-repeat: repeat;
+    height: 220px;
+    position: sticky;
+    z-index: -1;
 }
 
 
