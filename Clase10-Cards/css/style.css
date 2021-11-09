@@ -1,42 +1,110 @@
 body{
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
-/* Colores y Dimensiones */
-
+            /* COLORES Y DIMENSIONES */
 .div1{
     background-color: #1CD1B0;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.div2, footer{
+.div2{
     background-color: #00669F;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: #00669F;
+    height: 50px;
+    padding: 6px;
 }
 .container{
     background-color: white;
-    padding: 8vh 4vh;
+    padding: 5vh 1vh;
+    align-content: center;
 }
 .tarjeta{
     background-color: #F3F3F3;
+    display: inline-block;
     width: 300px;
     height: 550px;
+    margin: 20px;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.10);
     position: relative;
 }
 .imagenFondo{
     height: 190px;
     background-color: tomato;
+    border-radius: 16px 16px 0px 0px;
 }
 .imagenPerfil{
     background-color: greenyellow;
     width: 120px;
     height: 120px;
     position: absolute;
-    margin-left: 50%;
+    top: 130px;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-radius: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+.like{
+    position: absolute;
+    left: 16px;
+    top: 16px;
 }
 .cta{
-    background-color: greenyellow;
+    background-color: #00669F;
     width: 130px;
     height: 48px;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
+    margin-left: 85px;
+    margin-right: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+            /* TEXTOS */
+h1, h2, h3, p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    margin: 0;
+    color: white;
+}
+
+.div1>p{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.div2>h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.titulo-carta{
+    margin-top: 76px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333333;
+}
+.txt-carta{
+    padding: 0px 40px;
+    font-size: 15px;
+    line-height: 19px;
+    color: #333333;
+}
+footer>p{
+    font-size: 13px;
+    text-align: center;
 }
