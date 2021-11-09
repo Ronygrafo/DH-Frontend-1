@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 #barra-anuncio {
     background-color: #222222;
@@ -67,6 +72,35 @@ select {
     float: right;
     z-index: 1;
 }
+.banner-cta>h2{
+    color: #3C2313;
+    background-color: white;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+.banner-cta>h1{
+    color: #3C2313;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+.banner-cta>button{
+    color: white;
+    background-color: #F0A83E;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 8px;
+    height: 48px;
+    width: 140px;
+    border: none;
+}
 
 .destacados {
     text-align: center;
@@ -95,13 +129,41 @@ select {
     list-style-type: none;
     text-align: left;
 }
+.ficha-producto{
+    background-color: #FBFAF6;
+
+}
+.ficha-producto>h3{
+    color: #3C2313;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+.ficha-producto>p{
+    color: #F0A83E;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+}
 
 .contacto{
     text-align: center;
 }
 .contacto>input{
+    color: white;
     text-align: center;
-margin: 10px;
+    margin: 10px;
+    background-color: #3C2313;
+    border: 0;
+    border-radius: 8px;
+    height: 32px;
+    width: 340px;
 }
 .contacto>h2 {
     color: #3C2313;
@@ -110,6 +172,31 @@ margin: 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
+}
+.b-main  {
+    color: white;
+    background-color: #F0A83E;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 16px;
+    height: 36px;
+    width: 100px;
+    border: none;
+}
+
+.b-disable  {
+    color: white;
+    background-color: #8A8787;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 16px;
+    height: 36px;
+    width: 100px;
+    border: none;
 }
 
 .suscribete{
@@ -137,6 +224,33 @@ margin: 10px;
     float: right;
 }
 
+.div-suscribete>button{
+    color: white;
+    background-color: #3C2313;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 16px;
+    height: 36px;
+    width: 100px;
+    border: none;
+}
+
+.div-suscribete>input{
+    color: white;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 16px;
+    height: 36px;
+    width: 340px;
+    border: none;
+    text-align: left;
+    padding-left: 10px;
+}
 
 .footer-pet{
     background-color: #3C2313;

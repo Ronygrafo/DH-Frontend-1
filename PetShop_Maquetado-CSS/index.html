@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop - Rony Romero</title>
-    <link rel="stylesheet" href="/PetShop_Clase6DH/root/css/style.css">
+    <link rel="stylesheet" href="/PetShop_Maquetado-CSS/css/style.css">
 </head>
 <body>
 
@@ -72,20 +72,22 @@
             <li>Comida</li>
         </ul>
         <!-- PRODUCTOS FICHAS -->
-        <div>
-            <img src="img/churrasquito.png">
-            <h3>Juguete Churrasquito</h3>
-            <p>$150</p>
-        </div>
-        <div>
-            <img src="img/comedero.png">
-            <h3>Comedero para perro</h3>
-            <p>$250</p>
-        </div>
-        <div>
-            <img src="img/Huesito.png">
-            <h3>Juguete Huesito</h3>
-            <p>$650</p>
+        <div id="productos-destacados">
+            <div class="ficha-producto">
+                <img src="img/churrasquito.png">
+                <h3>Juguete Churrasquito</h3>
+                <p>$150</p>
+            </div>
+            <div class="ficha-producto">
+                <img src="img/comedero.png">
+                <h3>Comedero para perro</h3>
+                <p>$250</p>
+            </div>
+            <div class="ficha-producto">
+                <img src="img/Huesito.png">
+                <h3>Juguete Huesito</h3>
+                <p>$650</p>
+            </div>
         </div>
     </section>
 
@@ -100,8 +102,8 @@
         <input type="tel" name="Teléfono" autocomplete="off"
         placeholder="Teléfono"/><br>
         
-        <button>Resetear</button>
-        <button>Enviar</button>
+        <button class="b-disable">Enviar</button>
+        <button class="b-main">Resetear</button>
     </section>
 
     <!-- Suscripción -->
