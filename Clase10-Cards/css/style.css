@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Colores y Dimensiones */
+
+.div1{
+    background-color: #1CD1B0;
+}
+.div2, footer{
+    background-color: #00669F;
+}
+.container{
+    background-color: white;
+    padding: 8vh 4vh;
+}
+.tarjeta{
+    background-color: #F3F3F3;
+    width: 300px;
+    height: 550px;
+    position: relative;
+}
+.imagenFondo{
+    height: 190px;
+    background-color: tomato;
+}
+.imagenPerfil{
+    background-color: greenyellow;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin-left: 50%;
+}
+.cta{
+    background-color: greenyellow;
+    width: 130px;
+    height: 48px;
+    position: absolute;
+    bottom: 10px;
+}
