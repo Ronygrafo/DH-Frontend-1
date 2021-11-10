@@ -14,30 +14,36 @@ body{
 .div2{
     background-color: #00669F;
     height: 80px;
-    display: flex;
+    display: flex;;
     justify-content: center;
     align-items: center;
 }
 footer{
     background-color: #00669F;
     height: 50px;
-    padding: 6px;
+}
+.tarjetero{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+
 }
 .container{
-    background-color: white;
-    padding: 5vh 1vh;
-    align-content: center;
+    padding: 2vh 2vw;
 }
+
 .tarjeta{
     background-color: #F3F3F3;
     display: inline-block;
     width: 300px;
     height: 550px;
-    margin: 20px;
     border-radius: 16px 16px 0px 0px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.10);
     position: relative;
+    margin: 20px;
 }
+
 .imagenFondo{
     height: 190px;
     background-color: tomato;
