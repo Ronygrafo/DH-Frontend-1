@@ -21,6 +21,10 @@ body{
 footer{
     background-color: #00669F;
     height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
 }
 .tarjetero{
     background-color: white;
