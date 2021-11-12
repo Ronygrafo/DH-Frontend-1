@@ -12,7 +12,9 @@
 </head>
 <body>
     <header>
-        <div class="logo"><p>Pizza Logo</p></div>
+        <div class="logo">
+            <img src="/Clase11-Pizza&Front/img/LogoPyF.png">
+        </div>
         <nav>  
         <ul type="none" class="nav-menu">
             <li><a href="">Home</a></li>
@@ -25,18 +27,15 @@
 
     <section class="container">
             <div class="tarjeta" id="t1">
-                <div class="imagenFondo">
-                </div>
                 <h2 class="titulo-carta">Envio gratis comprando 2 pizzas</h2>
+                <div id="imagenFondo"></div>
             </div>
 
             <div class="tarjeta" id="t2">
-                <div class="imagenFondo">
-                </div>
                 <h2 class="titulo-carta">Podio de pizzas</h2>
                 <div class="carta-izq">
                     <h2 class="subti-carta">Pizzas top 5</h2>
-                    <ol>
+                    <ol id="Top-pizzas">
                         <li>Muzzarella</li>
                         <li>Hawaiana</li>
                         <li>Muzzarella J&Morron</li>
@@ -44,14 +43,18 @@
                         <li>Calabresa</li>
                     </ol>
                 </div>
-                <div class="carta-der">img</div>
+                <div class="carta-der">
+                    <img id="imgPodio" src="/Clase11-Pizza&Front/img/PizzaTop.png">
+                </div>
             </div>
     </section>
 
     <footer>
-        <nav>
-            <div class="logo"><p>Pizza Logo</p></div>
-            <ul type="none" class="nav-menu-abajo">
+        <div class="logo" id="logo-abajo">
+            <img src="/Clase11-Pizza&Front/img/LogoPyF.png">
+        </div>
+        <nav class="nav-menu-abajo">
+            <ul id="nav-abajo" type="none">
                 <li><a href="">Home</a></li>
                 <li><a href="">Ranking</a></li>
                 <li><a href="">Promo</a></li>

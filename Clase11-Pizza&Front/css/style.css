@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    color: white;
+    color: rgb(170, 170, 170);
 }
 
 body{
@@ -12,53 +12,89 @@ body{
 header {
     background-color: #222222;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
+    height: 100px;
+    padding: 20px;
 }
 
 .logo{
-    width: 260px;
-    border: violet dotted;
-    display: inline-block;
-    order: 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
 }
 .nav-menu{
     display: flex;
-    width: 33vw;
+    width: 35vw;
     justify-content: space-around;
+    align-content: center;
+}
+.nav-menu>li{
+    margin: 0px 5px;
 }
 .container{
     background-color: white;
     display: flex;
     justify-content: space-around;
-    padding: 5px;
+    padding: 8px;
 }
 
 .tarjeta{
-    background-color: #cfcfcf;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
     height: 350px;
     border-radius: 6px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.10);
     margin: 30px 5px;
+    padding: 16px;
 }
 
 .carta-izq{
     width: 50%;
+    padding-left: 24px;
+}
+#t1{
+    background-image: url("/Clase11-Pizza&Front//img/delivery.png");
+    background-position: center;
+    background-size: cover;
 }
 .carta-der{
     width: 50%;
 }
 
 footer{
+    padding: auto;
     background-color: #222222;
     display: flex;
-    justify-content: space-between
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 150px;
+    
 }
+
+#logo-abajo{
+    margin-top: 16px;
+    margin-right: 32px;
+}
+
 .nav-menu-abajo{
-    display: inline-block;
     order: -1;
+    height: 150px;
+    display: flex;
+    align-content: space-around;
+}
+#nav-abajo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+#nav-abajo>li{
+width: 100%;
 }
 
             /* TEXTOS */
@@ -68,7 +104,7 @@ footer{
 }
 
 .titulo-carta{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 14px;
     font-family: 'Roboto';
     font-size: 24px;
@@ -76,6 +112,11 @@ footer{
     text-align: center;
     color: red;
 }
+#Top-pizzas{
+    margin-left: 16px;
+    padding: 0;
+}
+
 .subti-carta{
 }
 .txt-carta{
@@ -84,8 +125,4 @@ footer{
     font-size: 15px;
     line-height: 19px;
     color: #333333;
-}
-footer>p{
-    font-size: 13px;
-    text-align: center;
 }
