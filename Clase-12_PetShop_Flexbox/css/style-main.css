@@ -1,6 +1,29 @@
+/* ELEMENTO */
+
 .destacados{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+#productos-destacados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#Cabecera-destacados{
+    width: 100%;
+    text-align: center;
+}
+.ul-destacados{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.ul-destacados li{
+    padding: 4px;
+    margin: 0px 8px;
+}
+
+/* TEXTOS */

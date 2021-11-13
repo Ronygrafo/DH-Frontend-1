@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 *{
     box-sizing: border-box;
     border: dotted 1px rgb(162, 159, 177);
-    color: rgb(155, 141, 141);
 }
 
 body{
@@ -32,6 +33,7 @@ header{
 #menu-top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0px;
     margin-right: 90px;
 }
@@ -48,8 +50,9 @@ header{
     background-size: cover;
     justify-content: flex-end;
     align-items: center;
-
 }
+.banner-cta{margin-right: 16px; text-align: center;}
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -58,6 +61,7 @@ footer {
 .suscribete{
     width: 100%;
     height: 60px;
+    padding: 0px 32px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -69,10 +73,25 @@ footer {
 .footer-pet{
     background-color: #3C2313;
     width: 100%;
-    height: 290px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.footer-item{
+    display: flex
+}
+
+.footer-info { color: white;
+    width: 170px;
 }
 .barra-cierre{
     width: 100%;
@@ -80,7 +99,79 @@ footer {
     text-align: center;
 }
 
-/* TEXTOS */
+/* TEXTOS Y BOTONES */
 
+h1, h2, h3, h4, p, li, button, input, select {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
 
-/* IMAGENES */
+#titulo-anuncio{
+    color: #F3F3F3;
+    font-size: 12px;
+}
+#menu-top>li{
+    color: white;
+    font-size: 14px;
+}
+.banner-cta>h2{
+    margin: 0;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: white;
+    color: #222222;
+    text-align: center;
+    font-size: 30px;
+}
+.banner-cta>h1{
+    margin: 18px;
+    color: #222222;
+    text-align: center;
+    font-size: 18px;
+}
+.banner-cta>button{
+    width: 140px;
+    height: 50PX;
+    background-color: #F0A83E;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+.suscribete h2 {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.suscribete input {
+    width: 260px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: white;
+    color: #A0A0A0;
+    font-size: 11px;
+}
+.suscribete button {
+    height: 40px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #3C2313;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+}
+.footer-info h3{
+    margin: 0px;
+    padding: 0px;
+}
+.footer-info p{
+    margin: 0px;
+    padding: 0px;
+}
+.barra-cierre{
+    margin: 0;
+    color: #F3F3F3;
+    font-size: 12px;
+}
+.barra-cierre a{ color: #F3F3F3; margin: 0; }
