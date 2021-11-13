@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop con FlexBox</title>
+    <link rel="stylesheet" href="/PetShop_Maquetado-CSS/css/style.css">
+</head>
+<body>
+
+<!-- BARRA ARRIBA -->
+    <header>
+<!--         PROBANDO ETIQ. STYLE / OPTION -->
+        <div id="barra-anuncio">
+            <h4 id="titulo-anuncio">Grandes ofertas en comederos</h4>
+            
+            <div id="opciones-barra">
+                <select name="Idioma">
+                <option value="Español">Español</option>
+                <option value="Inlés">Inlés</option>
+                <option value="Francés">Francés</option>
+                </select>
+
+                <select name="Moneda">
+                    <option value="$ARG">ARG</option>
+                    <option value="$COP">COP</option>
+            </select>
+
+        </div>
+
+        </div>
+
+        <nav>
+            <div class="botonera">
+                <img id="logo-top" src="img/Logo-FrontCATDOG-2.png">
+                
+                <div class="menu">
+                    <ul>
+                        <li><img src="img/pawWT.svg">Categorías</li>
+                        <li><img src="img/pawWT.svg">Pets</li>
+                        <li><img src="img/pawWT.svg">Nosotros</li>
+                        <li><img src="img/pawWT.svg">Contáctanos</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    
+<!-- PRIMER BANNER -->
+    <main>
+        <div class="main-banner">
+            <img class="main-img" src="img/banner-ppal-petshop.png">
+            <div class="banner-cta">
+                <h2>¡Es un placer tenerte aquí! </h2>
+                <h1>¡Comederos en descuento!</h1>
+                <button>COMEDEROS</button>
+            </div>
+        </div>
+    </main>
+
+<!-- DESTACADOS -->
+    <section class="destacados">
+        <img src="img/pawOrange.svg">
+        <H2>Productos Destacados</H2>
+        <ul class="ul-destacados">
+            <li>Comederos</li>
+            <li>-</li>
+            <li>Accesorios</li>
+            <li>-</li>
+            <li>Comida</li>
+        </ul>
+        <!-- PRODUCTOS FICHAS -->
+        <div id="productos-destacados">
+            <div class="ficha-producto">
+                <img src="img/churrasquito.png">
+                <h3>Juguete Churrasquito</h3>
+                <p>$150</p>
+            </div>
+            <div class="ficha-producto">
+                <img src="img/comedero.png">
+                <h3>Comedero para perro</h3>
+                <p>$250</p>
+            </div>
+            <div class="ficha-producto">
+                <img src="img/Huesito.png">
+                <h3>Juguete Huesito</h3>
+                <p>$650</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto">
+<!--         PROBANDO ETIQ. INPUT -->
+        <h2>Contáctanos</h2>
+        <input type="text" name="Nombre" autocomplete="off"
+        placeholder="Nombre y Apellido"/><br>
+        <input type="email" name="Email" autocomplete="off"
+        placeholder="Ingresá tu correo electrónico"/> <br>
+        <input type="tel" name="Teléfono" autocomplete="off"
+        placeholder="Teléfono"/><br>
+        
+        <button class="b-disable">Enviar</button>
+        <button class="b-main">Resetear</button>
+    </section>
+
+    <!-- Suscripción -->
+
+    <section class="suscribete">
+        <img src="img/suscribete-icon.png">
+        <h2>Suscríbete para más novedades</h2>
+            <div class="div-suscribete">
+                <input type="email" name="Email" autocomplete="off"
+                placeholder="Ingresá tu correo electrónico" />
+                <button>Suscribirme</button>
+            </div>
+    </section>
+
+<!-- FOOTER -->
+    <footer>
+
+        <div class="footer-pet">
+            <img src="img/Local.png">
+            <h3>Localidad</h3><p>Avenida Siempre viva # 12 -3</p>
+
+            <img src="img/Tel.png">
+            <h3>Teléfono</h3><p>+57-1-489-8130</p>
+
+            <img src="img/Mail.png">
+            <h3>Correo Electrónico</h3><p>petshop@digitalhouse.com</p>
+            <img src="img/Logo-FrontCATDOG-1.png">
+        </div>
+
+
+        <p class="barra-cierre">Todos los Derechos Reservados <a href="">@ronygrafo<sup>©</sup></a></p>
+      
+
+    </footer>
+
+</body>
+</html>
