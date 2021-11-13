@@ -8,9 +8,8 @@
 <!--     CSS DIFERENTES -->
     <link rel="stylesheet" href="/Clase-12_PetShop_Flexbox/css/style-home.css">
     <link rel="stylesheet" href="/Clase-12_PetShop_Flexbox/css/style-main.css">
-<!--     GOOGLE FONTS -->
-
-<!--     FONTAWESOME -->
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/0b6cc2638c.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -40,10 +39,10 @@
         <nav>
             <div class="botonera">
                 <ul id="menu-top" type="none">
-                        <li><img src="img/pawWT.svg">Categorías</li>
-                        <li><img src="img/pawWT.svg">Pets</li>
-                        <li><img src="img/pawWT.svg">Nosotros</li>
-                        <li><img src="img/pawWT.svg">Contáctanos</li>
+                        <li><i class="fas fa-paw"></i>Categorías</li>
+                        <li><i class="fas fa-paw"></i>Pets</li>
+                        <li><i class="fas fa-paw"></i>Nosotros</li>
+                        <li><i class="fas fa-paw"></i>Contáctanos</li>
                 </ul>
             </div>
         </nav>
@@ -64,7 +63,7 @@
 <!-- DESTACADOS -->
     <section class="destacados">
         <div id="Cabecera-destacados">
-            <img src="img/pawOrange.svg">
+            <i class="fas fa-paw"></i>
             <H2>Productos Destacados</H2>
             <ul type="none" class="ul-destacados">
                 <li>Comederos</li>
@@ -95,7 +94,7 @@
 <!-- CONTACTO -->
     <section class="contacto">
         <!--         PROBANDO ETIQ. INPUT -->
-                <h2>Contáctanos</h2>
+                <h3 id="contactanos" >Contáctanos</h3>
                 <input type="text" name="Nombre" autocomplete="off"
                 placeholder="Nombre y Apellido"/><br>
                 <input type="email" name="Email" autocomplete="off"
@@ -103,8 +102,10 @@
                 <input type="tel" name="Teléfono" autocomplete="off"
                 placeholder="Teléfono"/><br>
                 
-                <button class="b-disable">Enviar</button>
-                <button class="b-main">Resetear</button>
+                <div class="botones-form">
+                <button class="b-disable">Resetear</button>
+                <button class="b-main">Enviar</button>
+                </div>
             </section>
     </section>
 
@@ -128,19 +129,19 @@
         <div class="footer-pet">
             <div class="footer-container">
                 <div class="footer-item">
-                <img id="ubicacion" alt="ubicación">
+                <img src="/Clase-9_PetShop_Maquetado-CSS/img/Local.png" id="ubicacion" alt="ubicación">
                 <div class="footer-info">
                 <h3>Localidad</h3><p>Avenida Siempre viva # 12 -3</p>
                 </div></div>
 
                 <div class="footer-item">
-                <img id="telefono" alt="Teléfono">
+                <img src="/Clase-9_PetShop_Maquetado-CSS/img/Tel.png" id="telefono" alt="Teléfono">
                 <div class="footer-info">
                 <h3>Teléfono</h3><p>+57-1-489-8130</p>
                 </div></div>
 
                 <div class="footer-item">
-                <img id="corre0" alt="Correo">
+                <img src="/Clase-9_PetShop_Maquetado-CSS/img/Mail.png" id="correo" alt="Correo">
                 <div class="footer-info">
                 <h3>Correo Electrónico</h3><p>petshop@digitalhouse.com</p>
                 </div></div>

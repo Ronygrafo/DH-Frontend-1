@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 *{
     box-sizing: border-box;
-    border: dotted 1px rgb(162, 159, 177);
 }
 
 body{
@@ -37,7 +36,8 @@ header{
     padding: 0px;
     margin-right: 90px;
 }
-#menu-top li{ margin-left: 20px; }
+#menu-top li{ margin-left: 20px; padding: 2px; }
+#menu-top li i{ margin: 0px 4px; }
 
 .main-banner{
     width: 100%;
@@ -73,6 +73,7 @@ footer {
 .footer-pet{
     background-color: #3C2313;
     width: 100%;
+    padding: 0px 32px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -84,14 +85,22 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
+    width: 300px;
 }
 
 .footer-item{
-    display: flex
+    display: flex;
+    align-items: center;
+}
+.footer-item img{
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
 }
 
 .footer-info { color: white;
-    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .barra-cierre{
     width: 100%;
@@ -136,6 +145,7 @@ h1, h2, h3, h4, p, li, button, input, select {
     text-align: center;
     color: white;
     font-size: 16px;
+    border-radius: 6px;
 }
 .suscribete h2 {
     margin: 0;
@@ -162,10 +172,18 @@ h1, h2, h3, h4, p, li, button, input, select {
     font-size: 11px;
 }
 .footer-info h3{
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
     margin: 0px;
     padding: 0px;
 }
 .footer-info p{
+    width: 100%;
+    color: #8A8787;
+    font-weight: 700;
+    font-size: 11px;
     margin: 0px;
     padding: 0px;
 }
