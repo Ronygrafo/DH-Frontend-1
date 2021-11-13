@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    border: dotted 1px rgb(162, 159, 177);
+    color: rgb(155, 141, 141);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENTOS */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F0A83E;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra-anuncio{
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 24px;
+    padding: 4px 90px;
+}
+#logo-top{ margin-left: 90px; }
+
+#menu-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin-right: 90px;
+}
+#menu-top li{ margin-left: 20px; }
+
+.main-banner{
+    width: 100%;
+    height: 410px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/Clase-12_PetShop_Flexbox/img/banner-ppal-petshop.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #222222;
+}
+.suscribete{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0A83E;
+}
+.suscribete h2{display: inline-block;}
+
+.footer-pet{
+    background-color: #3C2313;
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra-cierre{
+    width: 100%;
+    height: 24px;
+    text-align: center;
+}
+
+/* TEXTOS */
+
+
+/* IMAGENES */
