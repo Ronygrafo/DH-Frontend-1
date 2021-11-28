@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ESPACIADO DESKTOP */
+header, section, footer {
+    padding: 0px 160px;
+}
+
+body {
+    padding: 0px;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#CTA {
+    display: flex;
+}
+.Left1 {
+    width: 50%;
+    text-align: left;
+}
+.Right1 {
+    width: 50%;
+    text-align: left;
+}
+
+.Numeral{
+    display: inline-block;
+}
+.ItemListado{
+    display: flex;
+}
+#Difference {
+    display: flex;
+    }
+
+#Testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+#AllCards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+.TestiCard{
+    display: flex;
+    width: 460px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FAFAFA;
+}
+
+#TryNow {
+    background-color: #F3613C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* ----- Estilos de Footer ----- */
+footer{
+    color: white;
+    background-color: #1E1E26;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+#SocialLinks{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+.FooterDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.NavFooter{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+/* ***** ESTILOS IMÁGENES / ICONOS ***** */
+.TestiCard img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 40px;
+}
+
+
+
+/* ESTILOS DE TEXTOS */
+
+#MenuBar{
+    display: flex;
+}
+
+#MenuBar li{
+    margin: 14px;
+}
+
+#Testimonials h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.TestiCard h4{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.TestiCard p{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 30px;    
+}
+
+.NavFooter li{
+    margin: 8px 0px;
+}
+.NavFooter li a{
+    color: white;
+    text-decoration: none;
+    margin: 8px 0px;
+}
+
+#SocialLinks li{
+}
+#SocialLinks li a{
+    color: white;
+}
+
+.FooterDiv p {
+    text-align: right;
+}
+
+/* ESTILO BOTONES */
+.Primary{
+    border: 0;
+    border-radius: 24px;
+    background-color: #F3613C;
+    width: 150px;
+    height: 48px;
+}
+.Secondary{
+    border: 0;
+    border-radius: 24px;
+    background-color:white;
+    width: 150px;
+    height: 48px;
+}
+
+
+/* +++++++++++ FONDOS +++++++++++ */
+#Fondo1{
+    position: absolute;
+    top: -300px;
+    right: -130px;
+    z-index: -1;
+}
+#Fondo2{
+    position: absolute;
+    bottom: -300px;
+    left: -130px;
+    z-index: -1;
+}
+
+#TryNow{
+    background-image: url("/EntregaFinal-FE1/imagenes/bg-simplify-section-desktop.svg");
+    background-repeat: repeat-x;
+    background-position-x: right;
+    background-position-y: bottom;
+}
