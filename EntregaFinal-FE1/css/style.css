@@ -8,18 +8,27 @@ header, section, footer {
 }
 
 body {
-    padding: 0px;
+    padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 45px 0px;
+}
+
+#MenuBar{
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 #CTA {
     display: flex;
+    margin-bottom: 100px;
 }
 .Left1 {
     width: 50%;
@@ -62,7 +71,7 @@ header{
 }
 
 #TryNow {
-    background-color: #F3613C;
+    background-color: #F3603b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,13 +117,55 @@ footer{
 
 
 /* ESTILOS DE TEXTOS */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 
-#MenuBar{
-    display: flex;
+h1, h2, h3, h4, h5, p, a, i, button, input {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+} 
+h1 {
+    color: #232C50;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 67px;
+}
+.Left1 p {
+    width: 350px;
+    line-height: 26px;
+    color: #B3B2B7;
+}
+
+h2 {
+    color: #232C50;
+    font-size: 38px;
+    font-weight: 700;
+}
+#TryNow h2 {
+    width: 440px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.Primary{
+    color: white;
+    font-size: 0.8rem;
+}
+.Secondary{
+    color: #F3603B;
+    font-size: 0.8rem;
 }
 
 #MenuBar li{
     margin: 14px;
+    text-decoration: none;
+}
+#MenuBar li a{
+    text-decoration: none;
+    font-size:0.8rem;
+    color: #242E52;
 }
 
 #Testimonials h2 {
@@ -122,29 +173,78 @@ footer{
     text-align: center;
 }
 
+#Difference h3 {
+    color: #232C50;
+    font-size: 1rem;
+    font-weight: 700;
+}
+#Difference p {
+    color: #B3B2B7;
+    font-size: 1rem;
+    line-height: 26px;
+}
+
 .TestiCard h4{
     width: 100%;
+    color: #232C50;
+    font-size: 17px;
+    font-weight: 700;
     text-align: center;
     margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 20px;
 }
 
 .TestiCard p{
     width: 100%;
     text-align: center;
     margin: 0;
-    padding: 30px;    
+    padding: 0px 30px;
+    margin-bottom: 40px;
+    color: #B9B9C1;
+    line-height: 25px;
 }
 
 .NavFooter li{
-    margin: 8px 0px;
+    margin-bottom: 16px;
 }
 .NavFooter li a{
     color: white;
     text-decoration: none;
     margin: 8px 0px;
+    font-size:0.8rem;
+    font-weight: 400;
+}
+#CorreoForm{
+    border: 0;
+    border-radius: 22px;
+    background-color:white;
+    width: 200px;
+    height: 44px;
+    margin: 0rem 0.3rem;
+    padding: 0px 1rem;
+    cursor: pointer
+}
+#CorreoForm::placeholder{
+    color: #B9B9C1;
+    font-weight: 400;
 }
 
-#SocialLinks li{
+#EnviarForm{
+    color: white;
+    border: 0;
+    border-radius: 22px;
+    background-color: #F3603b;
+    width: 64px;
+    height: 44px;
+    padding: 0;
+    cursor: pointer
+}
+
+#SocialLinks{
+    margin: 0;
+    padding: 0;
 }
 #SocialLinks li a{
     color: white;
@@ -152,22 +252,39 @@ footer{
 
 .FooterDiv p {
     text-align: right;
+    color: #8C8C94;
+    font-size: 12px;
+    margin: 0;
 }
 
 /* ESTILO BOTONES */
 .Primary{
     border: 0;
-    border-radius: 24px;
-    background-color: #F3613C;
-    width: 150px;
-    height: 48px;
+    border-radius: 22px;
+    background-color: #F3603b;
+    width: 134px;
+    height: 44px;
+    box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
+    margin: 1.5rem 0;
+    padding: 0;
+    cursor: pointer
 }
 .Secondary{
     border: 0;
-    border-radius: 24px;
+    border-radius: 22px;
     background-color:white;
-    width: 150px;
-    height: 48px;
+    width: 134px;
+    height: 44px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    margin: 1.5rem 0;
+    padding: 0;
+    cursor: pointer
+}
+.FooterDiv img{
+    margin-right: 20px;
+}
+.FooterDiv i{
+    font-size: 1.4rem;
 }
 
 
@@ -180,8 +297,8 @@ footer{
 }
 #Fondo2{
     position: absolute;
-    bottom: -300px;
-    left: -130px;
+    bottom: -950px;
+    left: -500px;
     z-index: -1;
 }
 
