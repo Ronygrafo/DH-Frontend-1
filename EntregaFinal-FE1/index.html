@@ -29,7 +29,7 @@
     <section id="CTA">
         <div class="Left1">
             <h1>Bring everyone together to build better products.</h1>
-            <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in view</p>
+            <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in view.</p>
             <button class="Primary">Get Started</button>
         </div>
         <div>
@@ -43,7 +43,7 @@
     <section id="Difference">
         <div class="Left1">
             <h2>What´s different about Manage?</h2>
-            <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+            <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
         </div>
         <div class="Right1">
             <div class="ItemListado">
@@ -67,21 +67,22 @@
     <article id="Testimonials">
         <h2>What they´ve said</h2>
     <div id="AllCards">
-        <div class="TestiCard">
+        <div class="TestiCard" id="Testi1">
                 <img src="/EntregaFinal-FE1/imagenes/avatar-anisha.png">
                 <h4>Anisha Li</h4>
                 <p>“Manage has supercharged our team´s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
         </div>
-        <div class="TestiCard">
+        <div class="TestiCard" id="Testi2">
             <img src="/EntregaFinal-FE1/imagenes/avatar-ali.png">
                 <h4>Ali Bravo</h4>
                 <p>“We have been able to cancel son many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much focused”</p>
         </div>
-        <div class="TestiCard">
+        <div class="TestiCard" id="Testi3">
             <img src="/EntregaFinal-FE1/imagenes/avatar-richard.png">
                 <h4>Richard Watts</h4>
                 <p>“Manage allows us to provide structure and progress keeps us organized and focused. I can’t stop recognized them to everyone I talk to”</p>
         </div>
+        <img id="Dots" src="/EntregaFinal-FE1/imagenes/dots.png">
     </div>
     <button class="Primary">Get Started</button>
     </article>
@@ -94,7 +95,7 @@
 
     <footer>
 <!--         SOCIAL LINKS -->
-        <div class="FooterDiv">
+        <div class="FooterDiv" id="LogoRedes">
             <img id="logoFooter" src="/EntregaFinal-FE1/imagenes/logo2.svg"></img>
             <div>
                 <ul id=SocialLinks type="none">
@@ -106,31 +107,34 @@
                 </ul>
             </div>
         </div>
-        <Nav class="MenuFooter">
-            <ul class="NavFooter" type="none">
-                <li><a href="">Home</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
-        </Nav>
-        <Nav class="MenuFooter">
-            <ul class="NavFooter" type="none">
-                <li><a href="">Careers</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">Privacy Policy</a></li>
-            </ul>
-        </Nav>
+        <div id="MenuAbajo">
+            <Nav class="MenuFooter" id="MenuFooter1">
+                <ul class="NavFooter" type="none">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </Nav>
+            <Nav class="MenuFooter" id="MenuFooter2">
+                <ul class="NavFooter" type="none">
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Community</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </Nav>
+        </div>
 <!--         SUBSCRIPTION FORM -->
-        <div class="FooterDiv">
+        <div class="FooterDiv" id="FormFooter">
             <form>
                 <input type="email" id="CorreoForm" placeholder="Update in your inbox...">
                 <label for="EnviarForm">
                 <input type="submit" id="EnviarForm" value="Go">
                 </label>
             </form>
-            <p>Copyright 2020. All Rights Reserved</p>
+            <p id="CopyDesktop">Copyright 2020. All Rights Reserved</p>
         </div>
+        <p id="CopyMobile">Copyright 2020. All Rights Reserved</p>
     </footer>
 
 </body>

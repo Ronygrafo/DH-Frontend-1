@@ -104,7 +104,10 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0;
+    margin: 0 60px;
+}
+#MenuAbajo{
+    display: flex;
 }
 
 /* ***** ESTILOS IMÁGENES / ICONOS ***** */
@@ -168,6 +171,9 @@ h2 {
     font-size:0.8rem;
     color: #242E52;
 }
+#MenuBar li a:hover{
+    color: #9196aa;
+}
 
 #Testimonials h2 {
     width: 100%;
@@ -206,6 +212,7 @@ h2 {
     color: #B9B9C1;
     line-height: 25px;
 }
+#Dots{display: none;}
 
 .NavFooter li{
     margin-bottom: 16px;
@@ -217,6 +224,9 @@ h2 {
     font-size:0.8rem;
     font-weight: 400;
 }
+.NavFooter li a:hover{
+    color: #F3603b;
+}
 #CorreoForm{
     border: 0;
     border-radius: 22px;
@@ -224,12 +234,16 @@ h2 {
     width: 200px;
     height: 44px;
     margin: 0rem 0.3rem;
-    padding: 0px 1rem;
+    padding: 0px 1.2rem;
     cursor: pointer
 }
 #CorreoForm::placeholder{
     color: #B9B9C1;
     font-weight: 400;
+}
+#CorreoForm:focus-visible{
+    outline: none;
+    border: #F3603b solid 1px;
 }
 
 #EnviarForm{
@@ -241,6 +255,9 @@ h2 {
     height: 44px;
     padding: 0;
     cursor: pointer
+}
+#EnviarForm:hover{
+    background-color: #f88d72;
 }
 
 #SocialLinks{
@@ -257,6 +274,7 @@ h2 {
     font-size: 12px;
     margin: 0;
 }
+#CopyMobile{display: none;}
 
 /* ESTILO BOTONES */
 .Primary{
@@ -270,6 +288,10 @@ h2 {
     padding: 0;
     cursor: pointer
 }
+.Primary:hover{
+    background-color: #f88d72;
+    box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.6);
+}
 .Secondary{
     border: 0;
     border-radius: 22px;
@@ -281,11 +303,18 @@ h2 {
     padding: 0;
     cursor: pointer
 }
+.Secondary:hover{
+    color: #fda089;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.30);
+}
 .FooterDiv img{
     margin-right: 20px;
 }
 .FooterDiv i{
     font-size: 1.4rem;
+}
+.FooterDiv i:hover{
+    color: #F3603b;
 }
 
 
@@ -323,4 +352,109 @@ h2 {
     100%{
         background-position-x: 1440px;
     }
+}
+
+/* MEDIA QUERY MOBILE */
+@media (max-width: 376px){
+
+    header, section, footer {
+        width: 100vw;
+        padding: 0px 20px;
+    }
+
+    #MenuBar{ display: none;}
+    header button { display: none;}
+
+    #logoTop{width: 120px;}
+
+    #CTA{flex-direction: column-reverse; margin-bottom: 32px;}
+
+    .Left1{width: 100%; text-align: center;}
+    .Right1{width: 100%; text-align: center;}
+
+    #CTA img {width: 100%;}
+    #Difference, footer {flex-direction: column;}
+
+    #Testimonials{margin-bottom: 20px;}
+
+    #AllCards{
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #Testi2{width: 100%;}
+    #Dots{display: initial; width: 60px; margin: 8px;}
+    #Testi1, #Testi3 {display: none;}
+    
+    /* ACOMODAR FOOTER */
+
+    .FooterDiv{align-items: center;}
+    .NavFooter{margin: 0 30px;}
+    footer{align-items: center;}
+    #LogoRedes{order: 3;
+    flex-direction: column-reverse;
+    align-items: center;}
+    #logoFooter{margin-bottom: 20px;}
+    #FormFooter {order: 1; margin-top: 32px;}
+    .FooterDiv img{margin: 0}
+    #MenuAbajo{order: 2; margin-top: 32px;}
+    #logoFooter{width: 140px;}
+    #FormFooter p{position: relative; bottom: 20px;}
+    #CopyDesktop{display: none;}
+
+    #CopyMobile{display: initial;
+        text-align: center;
+        color: #8C8C94;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 8px;
+        order: 4;
+    }
+
+    #SocialLinks{
+        margin: 32px 0px;}
+
+    .FooterDiv a{margin: 20px;}
+    .FooterDiv i{font-size: 2rem;}
+
+
+    /* ======== MOBILE TEXTOS ========= */
+
+    h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .Left1 p {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    #TryNow{justify-content: center;}
+    
+    #TryNow h2{
+        font-size: 36px;
+        padding: 0px 10px;
+        line-height: 44px;}
+
+/* +++++++++++ FONDOS MOBILE +++++++++++ */
+    #Fondo1{ display: none;}
+    #Fondo2{ display: none;}
+
+/* ANIMACIONES MOBILE */
+
+@keyframes desplazamiento{
+    0%{
+        background-position-x: right;
+    }
+    100%{
+        background-position-x: 376px;
+    }
+}
+
 }
