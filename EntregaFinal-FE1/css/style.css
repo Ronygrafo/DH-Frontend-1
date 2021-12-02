@@ -26,6 +26,8 @@ header{
     padding: 0;
 }
 
+#DivHamburMenu{display: none;}
+
 #CTA {
     display: flex;
     margin-bottom: 100px;
@@ -164,14 +166,13 @@ h2 {
 
 #MenuBar li{
     margin: 14px;
-    text-decoration: none;
 }
-#MenuBar li a{
+#DivHamburMenu, #MenuBar li a{
     text-decoration: none;
     font-size:0.8rem;
     color: #242E52;
 }
-#MenuBar li a:hover{
+#DivHamburMenu, #MenuBar li a:hover{
     color: #9196aa;
 }
 
@@ -362,7 +363,6 @@ h2 {
         padding: 0px 20px;
     }
 
-    #MenuBar{ display: none;}
     header button { display: none;}
 
     #logoTop{width: 120px;}
@@ -386,6 +386,34 @@ h2 {
     #Testi2{width: 100%;}
     #Dots{display: initial; width: 60px; margin: 8px;}
     #Testi1, #Testi3 {display: none;}
+
+    /* MENU HAMBURGUESA MOBILE */
+
+    #MenuBar{ display: none;}
+    #DivHamburMenu{
+        display: block;
+        z-index: 1;
+    }
+    #HamburMenu{
+        flex-direction: column;
+        padding: 0;
+        display: none;
+    }
+    #HamburMenu li{
+    }
+
+
+    #btnHambur:checked ~ #HamburMenu {
+        transition: all .5s;
+        display: flex;
+        height: 30vh;
+      }
+
+      #HamburMenu{
+        transition: all .5s;
+        height: 0vh;
+      }
+
     
     /* ACOMODAR FOOTER */
 
@@ -400,7 +428,6 @@ h2 {
     .FooterDiv img{margin: 0}
     #MenuAbajo{order: 2; margin-top: 32px;}
     #logoFooter{width: 140px;}
-    #FormFooter p{position: relative; bottom: 20px;}
     #CopyDesktop{display: none;}
 
     #CopyMobile{display: initial;
