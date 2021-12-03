@@ -629,8 +629,20 @@ h2 {
     }
 
 /* +++++++++++ FONDOS MOBILE +++++++++++ */
-    #Fondo1{ display: none;}
-    #Fondo2{ display: none;}
+#Fondo1{
+    width: 455px;
+
+    top: -130px;
+    right: -130px;
+}
+#Fondo2{
+    width: 300px;
+
+    left: auto;
+    bottom: auto;
+    top: 530px;
+    right: -170px;
+}
 
 /* ANIMACIONES MOBILE */
 
@@ -642,5 +654,4 @@ h2 {
         background-position-x: 376px;
     }
 }
-
 }
