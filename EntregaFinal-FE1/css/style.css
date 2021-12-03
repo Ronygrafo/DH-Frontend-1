@@ -26,6 +26,8 @@ header{
     padding: 0;
 }
 
+#HamburMenu{display: none;}
+
 #CTA {
     display: flex;
     margin-bottom: 100px;
@@ -164,9 +166,8 @@ h2 {
 
 #MenuBar li{
     margin: 14px;
-    text-decoration: none;
 }
-#MenuBar li a{
+#menuH li a ,#MenuBar li a{
     text-decoration: none;
     font-size:0.8rem;
     color: #242E52;
@@ -386,7 +387,134 @@ h2 {
     #Testi2{width: 100%;}
     #Dots{display: initial; width: 60px; margin: 8px;}
     #Testi1, #Testi3 {display: none;}
+
+
+/* ******** HAMBURGESA CODEPEN modificado inicio */
+
+    #HamburMenu{
+        display: initial;
+        position: absolute;
+        right: 10px;
+        top: 40px;
+    }
+
+    #menuToggle{
+    display: block;
     
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+    }
+
+    #menuToggle a{
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+    }
+
+
+    #menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+    }
+
+    /* estilos spans hamburguesa */
+    #menuToggle span
+    {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #232C50;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+
+    /* Animacion transformacion hamburguesa. */
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /* posicion absoluta hamburguesa*/
+
+    #menuH{
+    position: absolute;
+    width: 300px;
+    margin: -90px 0 0 -250px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menuH li
+    {
+    padding: 10px 0;
+    font-size: 22px;
+    }
+
+    #menuToggle input:checked ~ ul
+    {
+    transform: none;
+    }
+
+/* ******** HAMBURGESA CODEPEN fin */ 
+/* fuente: https://codepen.io/erikterwan/pen/EVzeRP?editors=0100 */ 
+
+
     /* ACOMODAR FOOTER */
 
     .FooterDiv{align-items: center;}
