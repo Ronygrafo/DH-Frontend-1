@@ -11,6 +11,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    counter-reset: section;
 }
 
 header{
@@ -40,16 +41,38 @@ header{
     width: 50%;
     text-align: left;
 }
-
-.Numeral{
-    display: inline-block;
-}
-.ItemListado{
-    display: flex;
-}
+/* LISTADO DIFFERENCE */
 #Difference {
     display: flex;
     }
+
+.ItemListado{
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.Numeral{
+    height: 100%;
+    padding: 0;
+    margin-right: 24px;
+}
+
+.ItemListado h3::before{
+    counter-increment: section;
+    content: "  0" counter(section) "  ";
+    
+    color: white;
+
+    text-align: center;
+    border-radius: 24px;
+    background-color: #F3603b;
+    margin-right: 24px;
+    padding: 14px 20px 12px 24px;
+}
+
+.ItemListado{
+    display: flex;
+}
 
 #Testimonials {
     display: flex;
@@ -186,10 +209,13 @@ h2 {
     font-size: 1rem;
     font-weight: 700;
 }
-#Difference p {
+.ItemListado p {
     color: #B3B2B7;
     font-size: 1rem;
     line-height: 26px;
+    margin-top: 16px;
+    margin-bottom: 36px;
+    margin-left: 95px;
 }
 
 .TestiCard h4{
@@ -334,7 +360,6 @@ h2 {
 }
 
 #TryNow{
-    position: relative;
     width: 100%;
     height: 100%;
     background-image: url("/EntregaFinal-FE1/imagenes/bg-simplify-section-desktop.svg");
@@ -432,8 +457,7 @@ h2 {
     }
 
     /* estilos spans hamburguesa */
-    #menuToggle span
-    {
+    #menuToggle span{
     display: block;
     width: 33px;
     height: 4px;
@@ -451,19 +475,16 @@ h2 {
                 opacity 0.55s ease;
     }
 
-    #menuToggle span:first-child
-    {
+    #menuToggle span:first-child{
     transform-origin: 0% 0%;
     }
 
-    #menuToggle span:nth-last-child(2)
-    {
+    #menuToggle span:nth-last-child(2){
     transform-origin: 0% 100%;
     }
 
     /* Animacion transformacion hamburguesa. */
-    #menuToggle input:checked ~ span
-    {
+    #menuToggle input:checked ~ span{
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
@@ -500,14 +521,12 @@ h2 {
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
 
-    #menuH li
-    {
+    #menuH li{
     padding: 10px 0;
     font-size: 22px;
     }
 
-    #menuToggle input:checked ~ ul
-    {
+    #menuToggle input:checked ~ ul{
     transform: none;
     }
 
@@ -569,6 +588,30 @@ h2 {
         font-size: 36px;
         padding: 0px 10px;
         line-height: 44px;}
+
+
+.ItemListado p {
+    color: #B3B2B7;
+    font-size: 1rem;
+    line-height: 26px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    margin-left: 95px;
+}
+
+.ItemListado h3::before{
+    counter-increment: section;
+    content: "  0" counter(section) "  ";
+    
+    color: white;
+
+    text-align: center;
+    border-radius: 24px;
+    background-color: #F3603b;
+    margin-right: 24px;
+    padding: 14px 20px 12px 24px;
+}
+
 
 /* +++++++++++ FONDOS MOBILE +++++++++++ */
     #Fondo1{ display: none;}
