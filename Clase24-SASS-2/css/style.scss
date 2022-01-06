@@ -1,0 +1,15 @@
+@import "Cards.scss";
+
+$colorTexto: blue;
+
+
+@mixin p-cool {
+    font-family: sans-serif;
+}
+
+
+
+p {
+    @include p-cool();
+    color: $colorTexto;
+}

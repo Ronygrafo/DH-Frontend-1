@@ -1,0 +1,13 @@
+.TestiCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  color: red;
+}
+
+p {
+  font-family: sans-serif;
+  color: blue;
+}/*# sourceMappingURL=style.css.map */

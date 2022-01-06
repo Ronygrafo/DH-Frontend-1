@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+header {
+    height: 400px;
+    margin: 50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+}
+
+header p {
+    background-color: rgb(66, 22, 107);
+    color: #FFF;
+}
+
+.menu {
+    background-color: rgb(3, 93, 3);
+}
+
+.menu li {
+    background-color: #FFF;
+}
+
+article h1 {
+    color: rgb(66, 22, 107);
+    margin: 50px;
+    font-size: 2rem;
+}
+
+article p {
+    color: rgb(66, 22, 107);
+    font-size: 1.5rem;
+}
+
+.menu-secundario {
+    background-color: rgb(3, 93, 3);
+}

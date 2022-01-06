@@ -1,0 +1,30 @@
+/*VARIABLES*/
+$colorDeFondo : rgb(16, 202, 115);
+$marginDocumento: 80px;
+$estiloTitulares: verdana;
+/*NESTING*/
+
+header {
+    height: 400px;
+    margin: $marginDocumento;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    p{
+        background-color: $colorDeFondo;
+    }
+}
+.menu{
+    background-color: rgb(3, 93, 3);
+    &-secundario{
+        background-color: rgb(3, 93, 3);
+    }
+}
+article{
+    h1{
+        font-family: $estiloTitulares;
+    }
+    h3{
+        font-family: $estiloTitulares;
+}
+}

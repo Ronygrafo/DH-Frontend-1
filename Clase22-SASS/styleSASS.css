@@ -1,0 +1,26 @@
+/*VARIABLES*/
+/*NESTING*/
+header {
+  height: 400px;
+  margin: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+header p {
+  background-color: #10ca73;
+}
+
+.menu {
+  background-color: #035d03;
+}
+.menu-secundario {
+  background-color: #035d03;
+}
+
+article h1 {
+  font-family: verdana;
+}
+article h3 {
+  font-family: verdana;
+}/*# sourceMappingURL=styleSASS.css.map */
